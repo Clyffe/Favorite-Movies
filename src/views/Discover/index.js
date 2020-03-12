@@ -39,7 +39,7 @@ class DiscoverView extends Component {
     const { isLoading, error, movies, search } = this.props;
     return (
       <View style={{flex: 1}}>
-        <Text>{ error ? "paila socio" : null}</Text>
+        <Text>{ error ? "Error" : null}</Text>
         <Form onSearch={search}/>
         {
           isLoading ?
